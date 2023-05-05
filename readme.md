@@ -5,13 +5,14 @@
 ## Models
 
 ### Multi-view Stereo Network
-![image](https://user-images.githubusercontent.com/81452190/236362485-00228576-65fc-4f7a-ae90-6858b54af813.png)
+<img src = "https://user-images.githubusercontent.com/81452190/236362485-00228576-65fc-4f7a-ae90-6858b54af813.png" width = "600px">
 
 ### Monocular Depth Estimation
-![image](https://user-images.githubusercontent.com/81452190/236362529-737fb5da-62a2-4829-a87d-0bae24249463.png)
+<img src = "https://user-images.githubusercontent.com/81452190/236362529-737fb5da-62a2-4829-a87d-0bae24249463.png" width = "600px">
 
 ### Zoe-Depth
-![image](https://user-images.githubusercontent.com/81452190/236362552-f4c86c71-eb4e-4b84-a955-c9b1cb951e29.png)
+<img src = "https://user-images.githubusercontent.com/81452190/236362552-f4c86c71-eb4e-4b84-a955-c9b1cb951e29.png" width = "600px">
+
 
 ## Dataset
 
