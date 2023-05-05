@@ -26,7 +26,12 @@
 - make sure COLMAP and Agisoft get almost the same to do validation
 
 ### 4.NeRF-Studio
-- Adding output of depth estimation path of all those different models
+- Adding output of depth estimation path of all those different models into previous json file
+which contains all spacial and camera parameters
+- With the help of depth map as guidance, NeRF start to training on sparse 3D point cloud and do
+volumn rendering. During the training process, the camera position is optimized to the best after
+iteratons.
+
 ## Models
 
 ### Multi-view Stereo Network
