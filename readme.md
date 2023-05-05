@@ -1,13 +1,13 @@
 # EC523 Project: Dense High-Quality 3D Reconstruction
 
 ## Overall pipeline
-### Depth Estimation
+### 1.Depth Estimation
 
-### Get Sparse 3D Point Cloud
+### 2.Get Sparse 3D Point Cloud
 
-### Generate and Estimate Camera Intrinsic Parameters
+### 3.Generate and Estimate Camera Intrinsic Parameters
 
-### NeRF-Studio
+### 4.NeRF-Studio
 
 ## Models
 
