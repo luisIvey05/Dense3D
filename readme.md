@@ -16,11 +16,17 @@
 3. Run the training code with MidAir Dataset
 
 ### 2.Get Sparse 3D Point Cloud
+- Install COLMAP to get sparse 3D point cloud for dataset
+- Export predicted camera intrinsic parameters
+- Using Agi2nerf.py to get json files containing corresponding  
 
 ### 3.Generate and Estimate Camera Intrinsic Parameters
+- Using Agisoft Metashape to optimize sparse point could
+- Export estimated camera intrinsic parameters
+- make sure COLMAP and Agisoft get almost the same to do validation
 
 ### 4.NeRF-Studio
-
+- Adding output of depth estimation path of all those different models
 ## Models
 
 ### Multi-view Stereo Network
