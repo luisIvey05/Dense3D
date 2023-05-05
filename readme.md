@@ -2,6 +2,18 @@
 
 ## Overall pipeline
 ### 1.Depth Estimation
+- For MVS-Net:
+1.
+2.
+3.
+- For Mono-Depth:
+1.
+2.
+3.
+- For ZoeDepth:
+1. First git clone the original version of ZoeDepth
+2. Replace the ZoeDepth_Loss_Modified.py file and ZoeDepth_Training_Json config file in original ZoeDepth folders
+3. Run the training code with MidAir Dataset
 
 ### 2.Get Sparse 3D Point Cloud
 
