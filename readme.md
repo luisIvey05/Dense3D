@@ -1,4 +1,4 @@
-# Dense High-Quality 3D Reconstruction
+# EC523 Project: Dense High-Quality 3D Reconstruction
 
 ## Models
 
