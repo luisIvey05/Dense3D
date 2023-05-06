@@ -43,7 +43,7 @@ Vis-MVSNet is a deep learning framework for dense multi-view stereo reconstructi
 ### Monocular Depth Estimation
 <img src = "https://user-images.githubusercontent.com/81452190/236362529-737fb5da-62a2-4829-a87d-0bae24249463.png" width = "600px">
 
-Monodepth is a popular approach for depth estimation from a single RGB image. The first version of this self-supervised learning framework explored both photometric and geometric constraints to learn depth estimation from unlabeled video sequences. The architecture consists of a depth network that predicts the depth map from an input image and a pose network that estimates the camera motion between frames. The task is expressed as the minimization of a photometric reprojection loss, which is a reconstruction error of the source view. Monodepth2 introduces three main contributions: a minimum reprojection loss, an auto-masking loss to ignore confusing stationary pixels, and a full-resolution multi-scale sampling method. Extensive experiments on KITTI 2015 stereo dataset demonstrate that Monodepth2 outperforms existing self-supervised methods and achieves state-of-the-art results on several depth estimation tasks.
+Monodepth is a popular approach for depth estimation from a single RGB image. The first version of this self-supervised learning framework explored both photometric and geometric constraints to learn depth estimation from unlabeled video sequences. The architecture in the image consists of a depth network that predicts the depth map from an input image and a pose network that estimates the camera motion between frames. The task is expressed as the minimization of a photometric reprojection loss, which is a reconstruction error of the source view. Monodepth2 introduces three main contributions: a minimum reprojection loss, an auto-masking loss to ignore confusing stationary pixels, and a full-resolution multi-scale sampling method. Extensive experiments on KITTI 2015 stereo dataset demonstrate that Monodepth2 outperforms existing self-supervised methods and achieves state-of-the-art results on several depth estimation tasks.
 
 ### Zoe-Depth
 <img src = "https://user-images.githubusercontent.com/81452190/236362552-f4c86c71-eb4e-4b84-a955-c9b1cb951e29.png" width = "600px">
@@ -53,16 +53,30 @@ ZoeDepth is a novel approach to depth estimation that addresses the limitations 
 ## Dataset
 
 ### MidAir
+
+MidAir is a large-scale synthetic dataset consisting of over 50,000 photorealistic images and depth maps of indoor and outdoor scenes. The dataset is designed for training and evaluating algorithms for depth estimation and other related tasks in computer vision. The scenes in MidAir are generated using the Unity game engine, which allows for the creation of highly detailed and realistic environments.
+
+Note: For our experiments, we used a subset of the MidAir dataset consisting of 1000 images for training and testing. The images in the dataset are captured from various viewpoints and contain a range of indoor and outdoor scenes, including offices, living rooms, and outdoor environments.
+
+Our MidAir dataset consists of over 1,000 high-resolution monocular images captured from a diverse range of scenes and viewpoints. Here are two sample images of directory of MidAir Dataset that provide a glimpse into the variety of scenes captured:
+
 <img src = "https://user-images.githubusercontent.com/81452190/236362715-4320262d-fbd8-4e6c-8375-9e5b78482208.png" width = "400px">
+
 <img src = "https://user-images.githubusercontent.com/81452190/236362747-0e178560-7d14-4328-8351-e83e5c924a32.png" width = "400px">
 
-### B1
+### Here are two sample images from the B1 and B2 datasets, which were used for fine-tuning our depth estimation algorithm:
+
+#### B1 Dataset
+This is a sample image of a directory of the B1 dataset, which was collected using a drone to fly around Boston University's campus:
+
 <img src = "https://user-images.githubusercontent.com/81452190/236362801-916762d0-cc3d-46c7-849e-33e9e2f4e287.png" width = "400px">
 
-### B2
+#### B2 Dataset
+This is a sample image of a directory of the B2 dataset, which was collected using a drone to fly around Boston University's campus:
+
 <img src = "https://user-images.githubusercontent.com/81452190/236362876-fdfce51a-679f-4441-a60a-b1bedf47819d.png" width = "400px">
 
-
+These datasets were collected using a drone to fly around Boston University's central campus. BU1 includes footage of Commonwealth Ave. facing west towards the I-90 freeway, while BU2 includes Marsh Chapel and Marsh Plaza footage. We used 1000 images from each of these datasets for fine-tuning our depth estimation algorithm, which resulted in improved performance on the MidAir dataset and other benchmark datasets.
 
 
 ## Metrics:
