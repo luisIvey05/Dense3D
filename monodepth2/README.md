@@ -23,7 +23,7 @@ checkpoints path: "/tmp/"
 
 --dataset: A class defined in "./dataset/monodataset.py"
 
---dataset: Dataset folder name "./xxxx"
+--data_path: Dataset folder name "./xxxx"
 
 --split txt file path with dataset image info "./splits/xxxx/"
 
