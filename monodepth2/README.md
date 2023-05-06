@@ -18,8 +18,11 @@ python test_simple.py --image_path ./data/b1_test --model_name weights_19 --ext 
 SCC introduction
 ----
 checkpoints path: "/tmp/"
+
 --dataset: A class defined in "./dataset/monodataset.py"
+
 --dataset: Dataset folder name "./xxxx"
+
 --split txt file path with dataset image info "./splits/xxxx/"
 
 ----
