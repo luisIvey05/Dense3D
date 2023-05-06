@@ -8,7 +8,6 @@ Commands
 ```bash
 --- train ---
 python train.py --model_name finetuned_mono --dataset midair --data_path MidAir --split midair
-```
 
 --- test single image---
 python test_simple.py --image_path ./test/test.jpg --model_name mono+stereo_640x192
