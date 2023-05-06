@@ -9,6 +9,7 @@ train
 ```bash
 python train.py --model_name finetuned_mono --dataset midair --data_path MidAir --split midair
 ```
+checkpoints path: "/tmp/"
 
 test single image
 
@@ -18,16 +19,12 @@ python test_simple.py --image_path ./data/b1_test --model_name weights_19 --ext 
 ```
 
 Args
-----
-checkpoints path: "/tmp/"
-
+```
 --dataset: A class defined in "./dataset/monodataset.py"
-
 --data_path: Dataset folder name "./xxxx"
-
 --split txt file path with dataset image info "./splits/xxxx/"
 
-----
+```
 
 Use a new dataset
 ----
