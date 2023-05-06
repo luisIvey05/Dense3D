@@ -14,12 +14,15 @@ python train.py --model_name finetuned_mono --dataset midair --data_path MidAir 
 python test_simple.py --image_path ./test/test.jpg --model_name mono+stereo_640x192
 python test_simple.py --image_path ./data/b1_test --model_name weights_19 --ext png
 ```
----
-# checkpoints path: "/tmp/"
-# --dataset: A class defined in "./dataset/monodataset.py"
-# --dataset: Dataset folder name "./xxxx"
-# --split txt file path with dataset image info "./splits/xxxx/"
----
+----
+SCC introduction
+checkpoints path: "/tmp/"
+--dataset: A class defined in "./dataset/monodataset.py"
+--dataset: Dataset folder name "./xxxx"
+--split txt file path with dataset image info "./splits/xxxx/"
+
+----
+
 --- create new dataset ---
 1. create a class in  "./dataset/monodataset.py" 
 		`like this one "class MidAirDataset(MonoDataset)"
