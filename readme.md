@@ -8,7 +8,7 @@
 3.
 - For Mono-Depth:
 1. Git clone monodepth2 here: https://github.com/nianticlabs/monodepth2
-2. Replace all file under ./monodepth
+2. Replace all files under ./monodepth
 3. Run the training codes for midair dataset.
 4. See more details in ./monodepth/README.md
 - For ZoeDepth:
