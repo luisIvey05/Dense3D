@@ -15,7 +15,7 @@ python test_simple.py --image_path ./test/test.jpg --model_name mono+stereo_640x
 python test_simple.py --image_path ./data/b1_test --model_name weights_19 --ext png
 ```
 
-SCC introduction
+args
 ----
 checkpoints path: "/tmp/"
 
