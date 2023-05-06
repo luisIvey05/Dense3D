@@ -5,7 +5,7 @@ Replece above files in original monodepth [1] for midair dataset finetuning
 
 Commands
 ----
-```python```
+```bash
 --- train ---
 python train.py --model_name finetuned_mono --dataset midair --data_path MidAir --split midair
 ```
