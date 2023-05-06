@@ -21,7 +21,7 @@ python test_simple.py --image_path ./data/b1_test --model_name weights_19 --ext 
 Args
 ```
 --dataset 		# A class defined in "./dataset/monodataset.py"
---data_path: 		# Dataset folder name "./xxxx"
+--data_path 		# Dataset folder name "./xxxx"
 --split 		# txt file path with dataset image info "./splits/xxxx/"
 ```
 
