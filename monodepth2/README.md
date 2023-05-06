@@ -35,6 +35,6 @@ Use a new dataset
 		`like this one "class MidAirDataset(MonoDataset)"
 2. import your new class in  "./dataset/__init__.py"
 3. create split file "train_file.txt" and "val_file.txt"
-		`which contain {folder,name,l/r} for all images from dataset
-		`then must remove 1st and last info if using mono mode
+		which contain {folder,name,l/r} for all images from dataset
+		then must remove 1st and last info if using mono mode
 4. add relative choice to "./options.py"
