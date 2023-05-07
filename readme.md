@@ -13,10 +13,10 @@
 
 ## Overall Pipeline
 ### 1.Depth Estimation
-- For MVS-Net:
+- For VisMVSNet:
 Please, follow the instructions inside vis_mvsnet.ipynb.
 
-- For Mono-Depth:
+- For MonoDepthv2:
 1. Git clone monodepth2 here: https://github.com/nianticlabs/monodepth2
 2. Replace all files under ./monodepth
 3. Run the training codes for midair dataset.
@@ -122,12 +122,20 @@ Comparing the models' performance in the table, it can be seen that the Fine-tun
 
 ## Result
 
-### MVS-Net 2D Depth Estimation + 3D reconstruction
-### Mono-Depth 2D Depth Estimation + 3D reconstruction
+### Baseline Experiment: Using Open3D's reconstruction system by replacing a toy dataset's (SceneNN) GT depth maps with predicted depth maps. 
+![](https://github.com/luisIvey05/Dense3D/blob/main/images/bed.gif) 
+### Baseline Experiment: Classical approach to 3D reconstruction (Structure from Motion)
+![](https://github.com/luisIvey05/Dense3D/blob/main/images/sfm.gif)
+### Vis-MVSNet 2D Depth Estimation + 3D reconstruction
+![](https://github.com/luisIvey05/Dense3D/blob/main/images/vismvsnet.gif)
+### MonoDepthv2 2D Depth Estimation + 3D reconstruction
+![](https://github.com/luisIvey05/Dense3D/blob/main/images/monodepth2.gif)
 ### Zoe-Depth 2D Depth Estimation + 3d reconstruction
+![](https://github.com/luisIvey05/Dense3D/blob/main/images/zoe.gif)
 
 ### NeRF + Depth Estimation:
 <img src = "https://user-images.githubusercontent.com/81452190/236475251-7b6f2495-64f8-440c-b509-86481d32de3e.png" width = "500px">
+![](https://github.com/luisIvey05/Dense3D/blob/main/images/nerf.gif)
 
 This is the 3D point clouds output + volumn rendered 3D reconstruction for the champel in BU central. 
 
