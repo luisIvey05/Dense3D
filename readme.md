@@ -3,9 +3,7 @@
 ## Overall pipeline
 ### 1.Depth Estimation
 - For MVS-Net:
-1.
-2.
-3.
+Please, follow the instructions inside vis_mvsnet.ipynb.
 - For Mono-Depth:
 1. Git clone monodepth2 here: https://github.com/nianticlabs/monodepth2
 2. Replace all files under ./monodepth
