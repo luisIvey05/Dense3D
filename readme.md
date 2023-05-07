@@ -1,6 +1,15 @@
 # EC523 Project: Dense High-Quality 3D Reconstruction
+<h4>
+<a href="#intro"> Overall Pipeline </a> | 
+<a href="#mod">Models</a> |
+<a href="#data">Datasets</a> |
+<a href="#met">Metrics</a> |
+<a href="#res">Results</a> |
+<a href = "#ref">References</a>
+</h4>
 
-## Overall pipeline
+<p id="intro"> </p>
+## Overall Pipeline
 ### 1.Depth Estimation
 - For MVS-Net:
 Please, follow the instructions inside vis_mvsnet.ipynb.
@@ -32,6 +41,7 @@ which contains all spacial and camera parameters
 volumn rendering. During the training process, the camera position is optimized to the best after
 iteratons.
 
+<p id="mod"> </p>
 ## Models
 
 ### Multi-view Stereo Network
@@ -50,6 +60,7 @@ Monodepth is a popular approach for depth estimation from a single RGB image. Th
 
 ZoeDepth is a novel approach to depth estimation that addresses the limitations of absolute depth maps by leveraging relative depth cues. This method involves two stages: a self-supervised learning approach to predict relative depth from monocular images and a transfer learning approach to fine-tune the model on a target dataset with metric depth maps as ground truth. ZoeDepth outperforms state-of-the-art methods on both relative and metric depth estimation tasks on several benchmark datasets and is suitable for real-time applications that require accurate depth estimation at close ranges. Additionally, the proposed method can be trained on multiple datasets, making it suitable for zero-shot transfer scenarios. 
 
+<p id="data"> </p>
 ## Dataset
 
 ### MidAir
@@ -78,7 +89,7 @@ This is a sample image of a directory of the B2 dataset, which was collected usi
 
 These datasets were collected using a drone to fly around Boston University's central campus. BU1 includes footage of Commonwealth Ave. facing west towards the I-90 freeway, while BU2 includes Marsh Chapel and Marsh Plaza footage. We used 1000 images from each of these datasets for fine-tuning our depth estimation algorithm, which resulted in improved performance on the MidAir dataset and other benchmark datasets.
 
-
+<p id="met"> </p>
 ## Metrics:
 
 | Models            | RMS      | REL      | ALog     |
@@ -93,6 +104,7 @@ These datasets were collected using a drone to fly around Boston University's ce
 
 Comparing the models' performance in the table, it can be seen that the Fine-tuned model (ours) outperforms all other models in terms of RMS and ALog, achieving the lowest values of 21.113 and 0.089, respectively. In terms of REL, Monocular Depth performs slightly better than our model, but our model is still competitive with a REL value of 0.201. MVS-Net and ZoeDepth models have significantly higher RMS and ALog values, indicating a poorer performance compared to the other models. Overall, our Fine-tuned model performs the best among the models in the comparison.
 
+<p id="res"> </p>
 ## Result
 
 ### MVS-Net 2D Depth Estimation + 3D reconstruction
@@ -104,7 +116,7 @@ Comparing the models' performance in the table, it can be seen that the Fine-tun
 
 This is the 3D point clouds output + volumn rendered 3D reconstruction for the champel in BU central. 
 
-
+<p id="ref"> </p>
 ## References
 
 1. H. C. Longuet-Higgins. A computer algorithm for reconstructing a scene from two projections. Nature, 293:133–135, 1981.
