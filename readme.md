@@ -135,7 +135,11 @@ Comparing the models' performance in the table, it can be seen that the Fine-tun
 
 ### NeRF + Depth Estimation:
 <img src = "https://user-images.githubusercontent.com/81452190/236475251-7b6f2495-64f8-440c-b509-86481d32de3e.png" width = "500px">
+
+
 ![](https://github.com/luisIvey05/Dense3D/blob/main/images/nerf.gif)
+
+
 
 This is the 3D point clouds output + volumn rendered 3D reconstruction for the champel in BU central. 
 
